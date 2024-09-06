@@ -96,5 +96,9 @@ def check_expiry():
     expired_users = check_for_expired_users()
     return jsonify({"expired_users": expired_users}), 200
 
+@app.route('/healthcheck', methods=['GET'])
+def healthcheck():
+    return jsonify({"status": "ok"}), 200
+
 if __name__ == '__main__':
     app.run(debug=True)
