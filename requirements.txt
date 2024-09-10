@@ -1,4 +1,6 @@
 Flask
 Flask-Cors
 gunicorn
+google-cloud-firestore
+google-auth
 requests
